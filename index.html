@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lei Singha</title>
+  <link rel="stylesheet" href="tailwind.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="./img/127-man-video-tutorial-course-02.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-body text-white font-poppins pb-12">
+
+  <header class="py-6">
+    <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+      <div class="text-lg font-bold">lei.singha</div>
+      <div class="hidden md:flex space-x-12 items-center">
+        <a href="#" class="text-selected-text">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About me</a>
+        <a href="#"><button onclick="window.open('./img/Resume.pdf')"
+            class="px-6 py-2 bg-theme font-bold">Resume</button></a>
+      </div>
+      <div class="md:hidden">
+        <button class="navbar-burger flex items-center text-blue-600 p-3">
+        <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z"
+            fill="white" />
+        </svg>
+      </button>
+        <div class="navbar-menu relative z-50 hidden">
+          <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+          <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+              <a class="mr-auto text-3xl font-bold " href="#">
+                <div class="text-lg text-gray-400 font-bold">lei.singha</div>
+              </a>
+              <button class="navbar-close">
+                <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <div>
+              <ul>
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Home</a>
+                </li>
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#projects">Project</a>
+                </li>
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#about">About</a>
+                </li>
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-auto">
+              <div class="pt-6">
+                <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-theme" href="./img/Resume.pdf" target="_blank">Resume</a>
+              </div>
+              <p class="my-4 text-xs text-center text-gray-400">
+                <span>Copyright © 2021</span>
+              </p>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+  <div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <div class="flex flex-wrap md:flex-nowrap">
+
+      <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
+        <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
+          <a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+            <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Home</span>
+          </a>
+          <a href="#projects" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+            <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Projects</span>
+          </a>
+          <a href="#about" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+            <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">About</span>
+          </a>
+          <a href="#contact" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+            <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Contact</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
+        <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left">Building<br> beautiful web
+          experiences.</h1>
+        <div class="w-full flex justify-center md:justify-start">
+          <a href="#projects"><button class="px-8 py-4 bg-theme text-white font-bold mt-12 flex items-center space-x-3">
+              <div>
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.4375 11C14.4375 11.9117 14.0753 12.786 13.4307 13.4307C12.786 14.0753 11.9117 14.4375 11 14.4375C10.0883 14.4375 9.21398 14.0753 8.56932 13.4307C7.92466 12.786 7.5625 11.9117 7.5625 11C7.5625 10.0883 7.92466 9.21398 8.56932 8.56932C9.21398 7.92466 10.0883 7.5625 11 7.5625C11.9117 7.5625 12.786 7.92466 13.4307 8.56932C14.0753 9.21398 14.4375 10.0883 14.4375 11Z"
+                    fill="white" />
+                  <path
+                    d="M0 11C0 11 4.125 3.4375 11 3.4375C17.875 3.4375 22 11 22 11C22 11 17.875 18.5625 11 18.5625C4.125 18.5625 0 11 0 11ZM11 15.8125C12.2764 15.8125 13.5004 15.3055 14.403 14.403C15.3055 13.5004 15.8125 12.2764 15.8125 11C15.8125 9.72365 15.3055 8.49957 14.403 7.59705C13.5004 6.69453 12.2764 6.1875 11 6.1875C9.72365 6.1875 8.49957 6.69453 7.59705 7.59705C6.69453 8.49957 6.1875 9.72365 6.1875 11C6.1875 12.2764 6.69453 13.5004 7.59705 14.403C8.49957 15.3055 9.72365 15.8125 11 15.8125Z"
+                    fill="white" />
+                </svg>
+              </div>
+              <span>View my work.</span>
+            </button></a>
+        </div>
+      </div>
+      <img src="img/man.svg" alt="Man" class="w-3/4 mt-12 md:absolute -mt-6 md:mt-0 right-0 -z-1">
+    </div>
+  </div>
+
+
+
+  <!-- My projects -->
+
+  <div class="container  mt-32 pt-32 -mb-60 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <section class="w-full">
+      <h2 id="projects" class="secondary-title">My Projects</h2>
+      <p class="section-paragraph">Here are some projects that I've worked on throughout university 💫.</p>
+
+      <!-- Carousel Body -->
+      <div class="my-20 relative rounded-lg block md:flex items-center bg-body shadow-2xl" style="min-height: 19rem;">
+        <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg"
+          style="min-height: 19rem;">
+          <img class="absolute inset-0 w-full h-full object-cover object-center" src="img/project1.png" alt="">
+          <!-- <div class="absolute inset-0 w-full h-full bg-indigo-900 opacity-75"></div> -->
+          <div class="absolute inset-0 w-full h-full flex items-center justify-center fill-current text-white">
+            <!-- <svg class="w-full h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239 120"><path d="M4.21 86.4V33.31h8.94l4 28.85.86 9.52.87-9.52 4-28.85h9.02V86.4h-5.19V42.83l-.87 7.22-5.19 36.35h-5.19l-5.2-36.93-.57-6.64V86.4zm35.79 0h6V33.31h-6zm114.24 0h6.06V33.31h-6.06zm46.16-24h5.48v-6.01h-5.48v-17h9.23v-6.08h-15.31V86.4h15.29v-6.06h-9.23zm-60-29.14v44.19a2.89 2.89 0 1 1-5.77 0V33.31h-6.34v44.14a9.23 9.23 0 1 0 18.46 0V33.31zm40.11 44.14V42.55a2.9 2.9 0 0 0-2.89-2.89h-2.88v41h2.88a3.68 3.68 0 0 0 2.89-3.18zm-3.21-44.09a9.12 9.12 0 0 1 9.23 9.24v34.9a9.12 9.12 0 0 1-9.23 9.24h-9.23V33.31h9.23m51.64 44.14v-34.9a2.89 2.89 0 0 0-2.88-2.89h-2.89v41h2.89a3.67 3.67 0 0 0 2.88-3.18zm-2.88-44.14a9.06 9.06 0 0 1 8.94 9.24v34.9a9.12 9.12 0 0 1-9.23 9.24h-9.23V33.31h9.52M89.31 57.55c-2.88-2.6-5.19-4.91-5.19-9.23v-5.77A2.89 2.89 0 0 1 87 39.66a3.1 3.1 0 0 1 2.89 2.89v6.05H96v-6.05a9.24 9.24 0 1 0-18.47 0v6.05c.58 6.93 4.62 10.68 7.5 13.56 2.89 2.6 5.2 4.91 5.2 9.24v6a2.89 2.89 0 1 1-5.77 0v-8.89h-6.11v8.94a9.23 9.23 0 1 0 18.46 0v-6c-.57-7.22-4.32-10.68-7.5-13.85m-25.1 0C61.33 55 59 52.64 59 48.32v-5.77a2.89 2.89 0 1 1 5.77 0v6.05h6.06v-6.05a9.24 9.24 0 1 0-18.47 0v6.05c0 6.93 4 10.68 6.93 13.56 2.88 2.6 5.19 4.91 5.19 9.24v6a2.89 2.89 0 0 1-2.88 2.89 3.1 3.1 0 0 1-2.89-2.89v-8.89h-5.46v8.94a9.23 9.23 0 1 0 18.46 0v-6c-.28-7.22-4.32-10.68-7.5-13.85m56.84-9.23v-5.82a9.24 9.24 0 1 0-18.47 0v34.9a9.45 9.45 0 0 0 9 9.24 6.63 6.63 0 0 0 6.34-4l2.89 4V62.45h-9.23v6.06h2.88v8.94a2.73 2.73 0 0 1-2.88 2.89 2.89 2.89 0 0 1-2.89-2.89v-34.9a2.9 2.9 0 0 1 2.89-2.89 3.1 3.1 0 0 1 2.88 2.89v6.05h6.64z"></path></svg> -->
+          </div>
+        </div>
+        <div class="w-full md:w-3/5 h-full flex items-center bg-body rounded-lg">
+          <div class="p-12 md:pr-24 md:pl-16 md:py-10">
+            <p class="text-white"><span class="text-white">This</span> cryptotracker is a web app that tracks the price
+              of crypto coins when you enter the ticker in the box. I've utilised Vue js for the frontend, and Express
+              js for the backend.I've also used MongoDB as my database to store the data from the API. </p>
+            <!-- <a class="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900" href="">
+        <span>Learn more my project</span>
+        <span class="text-xs ml-1">&#x279c;</span>
+      </a> -->
+            <div class="flex mt-9 space-x-6">
+              <a href="https://github.com/leisingha/cryptotracker">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    fill="white" />
+                </svg>
+              </a>
+
+              <svg fill="#000000" height="24" width="24" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 194.818 194.818" xml:space="preserve">
+                <g>
+                  <path d="M185.818,2.161h-57.04c-4.971,0-9,4.029-9,9s4.029,9,9,9h35.312l-86.3,86.3c-3.515,3.515-3.515,9.213,0,12.728
+		c1.758,1.757,4.061,2.636,6.364,2.636s4.606-0.879,6.364-2.636l86.3-86.3v35.313c0,4.971,4.029,9,9,9s9-4.029,9-9v-57.04
+		C194.818,6.19,190.789,2.161,185.818,2.161z" fill="white" />
+                  <path d="M149,77.201c-4.971,0-9,4.029-9,9v88.456H18v-122h93.778c4.971,0,9-4.029,9-9s-4.029-9-9-9H9c-4.971,0-9,4.029-9,9v140
+		c0,4.971,4.029,9,9,9h140c4.971,0,9-4.029,9-9V86.201C158,81.23,153.971,77.201,149,77.201z" fill="white" />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12"
+            viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon points="50,0 100,0 50,100 0,100" />
+          </svg>
+        </div>
+        <!-- <button class="absolute top-0 mt-32 left-0 bg-white rounded-full shadow-md h-12 w-12 text-2xl text-indigo-600 hover:text-indigo-400 focus:text-indigo-400 -ml-6 focus:outline-none focus:shadow-outline">
+    <span class="block" style="transform: scale(-1);">&#x279c;</span>
+  </button>
+  <button class="absolute top-0 mt-32 right-0 bg-white rounded-full shadow-md h-12 w-12 text-2xl text-indigo-600 hover:text-indigo-400 focus:text-indigo-400 -mr-6 focus:outline-none focus:shadow-outline">
+    <span class="block" style="transform: scale(1);">&#x279c;</span>
+  </button> -->
+      </div>
+
+
+
+      <div class="my-20 relative rounded-lg block md:flex items-center bg-body shadow-2xl" style="min-height: 19rem;">
+        <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg"
+          style="min-height: 19rem;">
+          <img class="absolute inset-0 w-full h-full object-cover object-center" src="img/project2.png" alt="">
+          <!-- <div class="absolute inset-0 w-full h-full bg-indigo-900 opacity-75"></div> -->
+          <div class="absolute inset-0 w-full h-full flex items-center justify-center fill-current text-white">
+            <!-- <svg class="w-full h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239 120"><path d="M4.21 86.4V33.31h8.94l4 28.85.86 9.52.87-9.52 4-28.85h9.02V86.4h-5.19V42.83l-.87 7.22-5.19 36.35h-5.19l-5.2-36.93-.57-6.64V86.4zm35.79 0h6V33.31h-6zm114.24 0h6.06V33.31h-6.06zm46.16-24h5.48v-6.01h-5.48v-17h9.23v-6.08h-15.31V86.4h15.29v-6.06h-9.23zm-60-29.14v44.19a2.89 2.89 0 1 1-5.77 0V33.31h-6.34v44.14a9.23 9.23 0 1 0 18.46 0V33.31zm40.11 44.14V42.55a2.9 2.9 0 0 0-2.89-2.89h-2.88v41h2.88a3.68 3.68 0 0 0 2.89-3.18zm-3.21-44.09a9.12 9.12 0 0 1 9.23 9.24v34.9a9.12 9.12 0 0 1-9.23 9.24h-9.23V33.31h9.23m51.64 44.14v-34.9a2.89 2.89 0 0 0-2.88-2.89h-2.89v41h2.89a3.67 3.67 0 0 0 2.88-3.18zm-2.88-44.14a9.06 9.06 0 0 1 8.94 9.24v34.9a9.12 9.12 0 0 1-9.23 9.24h-9.23V33.31h9.52M89.31 57.55c-2.88-2.6-5.19-4.91-5.19-9.23v-5.77A2.89 2.89 0 0 1 87 39.66a3.1 3.1 0 0 1 2.89 2.89v6.05H96v-6.05a9.24 9.24 0 1 0-18.47 0v6.05c.58 6.93 4.62 10.68 7.5 13.56 2.89 2.6 5.2 4.91 5.2 9.24v6a2.89 2.89 0 1 1-5.77 0v-8.89h-6.11v8.94a9.23 9.23 0 1 0 18.46 0v-6c-.57-7.22-4.32-10.68-7.5-13.85m-25.1 0C61.33 55 59 52.64 59 48.32v-5.77a2.89 2.89 0 1 1 5.77 0v6.05h6.06v-6.05a9.24 9.24 0 1 0-18.47 0v6.05c0 6.93 4 10.68 6.93 13.56 2.88 2.6 5.19 4.91 5.19 9.24v6a2.89 2.89 0 0 1-2.88 2.89 3.1 3.1 0 0 1-2.89-2.89v-8.89h-5.46v8.94a9.23 9.23 0 1 0 18.46 0v-6c-.28-7.22-4.32-10.68-7.5-13.85m56.84-9.23v-5.82a9.24 9.24 0 1 0-18.47 0v34.9a9.45 9.45 0 0 0 9 9.24 6.63 6.63 0 0 0 6.34-4l2.89 4V62.45h-9.23v6.06h2.88v8.94a2.73 2.73 0 0 1-2.88 2.89 2.89 2.89 0 0 1-2.89-2.89v-34.9a2.9 2.9 0 0 1 2.89-2.89 3.1 3.1 0 0 1 2.88 2.89v6.05h6.64z"></path></svg> -->
+          </div>
+        </div>
+        <div class="w-full md:w-3/5 h-full flex items-center bg-body rounded-lg">
+          <div class="p-12 md:pr-24 md:pl-16 md:py-10">
+            <p class="text-white"><span class="text-white">This</span> is a landing page for a ecomm website that is
+              mobile-responsive </p>
+            <!-- <a class="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900" href="">
+        <span>Learn more my project</span>
+        <span class="text-xs ml-1">&#x279c;</span>
+      </a> -->
+            <div class="flex mt-9 space-x-6">
+              <a href="https://github.com/leisingha/ecom-LandingPage">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    fill="white" />
+                </svg>
+              </a>
+
+              <a href="https://leisingha.github.io/ecom-LandingPage/">
+                <svg fill="#000000" height="24" width="24" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 194.818 194.818" xml:space="preserve">
+                  <g>
+                    <path d="M185.818,2.161h-57.04c-4.971,0-9,4.029-9,9s4.029,9,9,9h35.312l-86.3,86.3c-3.515,3.515-3.515,9.213,0,12.728
+		c1.758,1.757,4.061,2.636,6.364,2.636s4.606-0.879,6.364-2.636l86.3-86.3v35.313c0,4.971,4.029,9,9,9s9-4.029,9-9v-57.04
+		C194.818,6.19,190.789,2.161,185.818,2.161z" fill="white" />
+                    <path d="M149,77.201c-4.971,0-9,4.029-9,9v88.456H18v-122h93.778c4.971,0,9-4.029,9-9s-4.029-9-9-9H9c-4.971,0-9,4.029-9,9v140
+		c0,4.971,4.029,9,9,9h140c4.971,0,9-4.029,9-9V86.201C158,81.23,153.971,77.201,149,77.201z" fill="white" />
+                  </g>
+                </svg>
+              </a>
+
+            </div>
+          </div>
+          <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12"
+            viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon points="50,0 100,0 50,100 0,100" />
+          </svg>
+        </div>
+        <!-- <button class="absolute top-0 mt-32 left-0 bg-white rounded-full shadow-md h-12 w-12 text-2xl text-indigo-600 hover:text-indigo-400 focus:text-indigo-400 -ml-6 focus:outline-none focus:shadow-outline">
+    <span class="block" style="transform: scale(-1);">&#x279c;</span>
+  </button>
+  <button class="absolute top-0 mt-32 right-0 bg-white rounded-full shadow-md h-12 w-12 text-2xl text-indigo-600 hover:text-indigo-400 focus:text-indigo-400 -mr-6 focus:outline-none focus:shadow-outline">
+    <span class="block" style="transform: scale(1);">&#x279c;</span>
+  </button> -->
+      </div>
+
+
+
+
+      <div class="my-20 relative rounded-lg block md:flex items-center bg-body shadow-2xl" style="min-height: 19rem;">
+        <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg"
+          style="min-height: 19rem;">
+          <img class="absolute inset-0 w-full h-full object-cover object-center" src="img/project3.png" alt="">
+          <!-- <div class="absolute inset-0 w-full h-full bg-indigo-900 opacity-75"></div> -->
+          <div class="absolute inset-0 w-full h-full flex items-center justify-center fill-current text-white">
+            <!-- <svg class="w-full h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239 120"><path d="M4.21 86.4V33.31h8.94l4 28.85.86 9.52.87-9.52 4-28.85h9.02V86.4h-5.19V42.83l-.87 7.22-5.19 36.35h-5.19l-5.2-36.93-.57-6.64V86.4zm35.79 0h6V33.31h-6zm114.24 0h6.06V33.31h-6.06zm46.16-24h5.48v-6.01h-5.48v-17h9.23v-6.08h-15.31V86.4h15.29v-6.06h-9.23zm-60-29.14v44.19a2.89 2.89 0 1 1-5.77 0V33.31h-6.34v44.14a9.23 9.23 0 1 0 18.46 0V33.31zm40.11 44.14V42.55a2.9 2.9 0 0 0-2.89-2.89h-2.88v41h2.88a3.68 3.68 0 0 0 2.89-3.18zm-3.21-44.09a9.12 9.12 0 0 1 9.23 9.24v34.9a9.12 9.12 0 0 1-9.23 9.24h-9.23V33.31h9.23m51.64 44.14v-34.9a2.89 2.89 0 0 0-2.88-2.89h-2.89v41h2.89a3.67 3.67 0 0 0 2.88-3.18zm-2.88-44.14a9.06 9.06 0 0 1 8.94 9.24v34.9a9.12 9.12 0 0 1-9.23 9.24h-9.23V33.31h9.52M89.31 57.55c-2.88-2.6-5.19-4.91-5.19-9.23v-5.77A2.89 2.89 0 0 1 87 39.66a3.1 3.1 0 0 1 2.89 2.89v6.05H96v-6.05a9.24 9.24 0 1 0-18.47 0v6.05c.58 6.93 4.62 10.68 7.5 13.56 2.89 2.6 5.2 4.91 5.2 9.24v6a2.89 2.89 0 1 1-5.77 0v-8.89h-6.11v8.94a9.23 9.23 0 1 0 18.46 0v-6c-.57-7.22-4.32-10.68-7.5-13.85m-25.1 0C61.33 55 59 52.64 59 48.32v-5.77a2.89 2.89 0 1 1 5.77 0v6.05h6.06v-6.05a9.24 9.24 0 1 0-18.47 0v6.05c0 6.93 4 10.68 6.93 13.56 2.88 2.6 5.19 4.91 5.19 9.24v6a2.89 2.89 0 0 1-2.88 2.89 3.1 3.1 0 0 1-2.89-2.89v-8.89h-5.46v8.94a9.23 9.23 0 1 0 18.46 0v-6c-.28-7.22-4.32-10.68-7.5-13.85m56.84-9.23v-5.82a9.24 9.24 0 1 0-18.47 0v34.9a9.45 9.45 0 0 0 9 9.24 6.63 6.63 0 0 0 6.34-4l2.89 4V62.45h-9.23v6.06h2.88v8.94a2.73 2.73 0 0 1-2.88 2.89 2.89 2.89 0 0 1-2.89-2.89v-34.9a2.9 2.9 0 0 1 2.89-2.89 3.1 3.1 0 0 1 2.88 2.89v6.05h6.64z"></path></svg> -->
+          </div>
+        </div>
+        <div class="w-full md:w-3/5 h-full flex items-center bg-body rounded-lg">
+          <div class="p-12 md:pr-24 md:pl-16 md:py-10">
+            <p class="text-white"><span class="text-white">This program</span>Checks for valid Euler circuits in
+              graphs<br>
+              The program instantitates graph objects from simple text files that contain directed or undirected
+              adjacency matrix.It then implements Heirholzer's Algorithm to find Euler circuits in each Graph objects
+              using a findEulerH() method.</p>
+            <!-- <a class="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900" href="">
+        <span>Learn more my project</span>
+        <span class="text-xs ml-1">&#x279c;</span>
+      </a> -->
+            <div class="flex mt-9 space-x-6">
+              <a href="https://github.com/leisingha/Euler-graphs">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    fill="white" />
+                </svg>
+              </a>
+
+              <!-- <svg fill="#000000" height="24" width="24" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 194.818 194.818" xml:space="preserve">
+<g>
+	<path d="M185.818,2.161h-57.04c-4.971,0-9,4.029-9,9s4.029,9,9,9h35.312l-86.3,86.3c-3.515,3.515-3.515,9.213,0,12.728
+		c1.758,1.757,4.061,2.636,6.364,2.636s4.606-0.879,6.364-2.636l86.3-86.3v35.313c0,4.971,4.029,9,9,9s9-4.029,9-9v-57.04
+		C194.818,6.19,190.789,2.161,185.818,2.161z" fill="white"/>
+	<path d="M149,77.201c-4.971,0-9,4.029-9,9v88.456H18v-122h93.778c4.971,0,9-4.029,9-9s-4.029-9-9-9H9c-4.971,0-9,4.029-9,9v140
+		c0,4.971,4.029,9,9,9h140c4.971,0,9-4.029,9-9V86.201C158,81.23,153.971,77.201,149,77.201z" fill="white"/>
+</g>
+</svg> -->
+            </div>
+          </div>
+          <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12"
+            viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon points="50,0 100,0 50,100 0,100" />
+          </svg>
+        </div>
+        <!-- <button class="absolute top-0 mt-32 left-0 bg-white rounded-full shadow-md h-12 w-12 text-2xl text-indigo-600 hover:text-indigo-400 focus:text-indigo-400 -ml-6 focus:outline-none focus:shadow-outline">
+    <span class="block" style="transform: scale(-1);">&#x279c;</span>
+  </button>
+  <button class="absolute top-0 mt-32 right-0 bg-white rounded-full shadow-md h-12 w-12 text-2xl text-indigo-600 hover:text-indigo-400 focus:text-indigo-400 -mr-6 focus:outline-none focus:shadow-outline">
+    <span class="block" style="transform: scale(1);">&#x279c;</span>
+  </button> -->
+      </div>
+
+    </section>
+  </div>
+
+
+
+  <!-- About me -->
+  <div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <section class="w-full">
+      <h2 id="about" class="secondary-title">About me</h2>
+      <p class="section-paragraph">Want more info? Have a read 🤭</p>
+
+      <!-- Info Tabs -->
+      <div class="space-y-12 my-16">
+        <div
+          class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+
+          <!-- Uni logo -->
+          <div class="mb-6 lg:mb-0">
+            <img src="./img/TMU-rgb.png" alt="">
+          </div>
+
+          <!-- Uni info -->
+          <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+            <h3 class="text-white text-3xl font-semibold">Toronto Metropolitan University</h3>
+
+            <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+              <div class="badge">3rd Year</div>
+              <div class="badge">CS Co-op</div>
+            </div>
+
+            <p class="text-secondary">Go to class on dunk on mfs </p>
+          </div>
+
+        </div>
+        <div
+          class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+
+          <!-- Avatar -->
+          <div class="mb-6 lg:mb-0">
+            <img class="h-4/5 w-4/5" src="./img/431-man-laptop.svg" alt="">
+          </div>
+
+          <!-- Tech info -->
+          <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+            <h3 class="text-white text-3xl font-semibold">My Tech stack</h3>
+
+            <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+              <div class="badge"><img class="w-7 object-bottom" src="./img/HTML5_logo_and_wordmark.svg.png" alt="">
+              </div>
+              <div class="badge"><img class="w-6" src="./img/CSS3_logo_and_wordmark.svg.png" alt=""></div>
+              <div class="badge"><img class="w-5" src="./img/1200px-Java_Logo.svg.png" alt=""></div>
+              <div class="badge"><img class="w-6" src="./img/javascript-1.svg" alt=""></div>
+              <div class="badge"><img class="w-6" src="./img/Python-logo-notext.svg.png" alt=""></div>
+
+            </div>
+
+            <p class="text-secondary">ye</p>
+          </div>
+
+
+        </div>
+
+    </section>
+  </div>
+
+
+  <!-- Contact -->
+  <div class="container mt-4 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <section class="w-full">
+      <h2 id="contact" class="secondary-title">Contact me</h2>
+      <p class="section-paragraph">Feel free to to contact me any time, through any method below 📬.</p>
+
+      <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-24">
+        <form action="https://formspree.io/f/xdovodln" method="POST">
+          <div class="space-y-12">
+            <div>
+              <label class="text-white block mb-6 text-xl font-bold">Name</label>
+              <input type="text" name="Name" class="w-full border border-input-border bg-input px-4 py-4">
+            </div>
+            <div>
+              <label class="text-white block mb-6 text-xl font-bold">Email</label>
+              <input type="email" name="Email" class="w-full border border-input-border bg-input px-4 py-4">
+            </div>
+            <div>
+              <label class="text-white block mb-6 text-xl font-bold">Message</label>
+              <textarea name="message"
+                class="w-full border border-input-border bg-input px-4 py-4 h-56 resize-none"></textarea>
+            </div>
+            <button class="px-6 py-2 bg-theme text-white font-bold" type="submit">Send it!</button>
+          </div>
+        </form>
+
+
+        <div class="mt-12">
+          <!-- Contact info -->
+          <p class="text-secondary">(647)-949-3359</p>
+          <a href="mailto:lsingha@ryerson.ca" class="text-secondary underline mt-3 block">lsingha@ryerson.ca</a>
+
+          <!-- Socials -->
+          <div class="flex mt-20 space-x-6">
+            <!-- Github -->
+            <a href="https://github.com/leisingha">
+              <svg class="w-8 h-8 lg:w-12 lg:h-12" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  fill="white" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/leisingha/">
+              <svg class="w-8 h-8 lg:w-12 lg:h-12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
+                enable-background="new 0 0 1000 1000" xml:space="preserve">
+                <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                <g>
+                  <g>
+                    <g id="post-linkedin">
+                      <path
+                        d="M892,10H108c-53.9,0-98,44.1-98,98v784c0,53.9,44.1,98,98,98h784c53.9,0,98-44.1,98-98V108C990,54.1,945.9,10,892,10z M304,843H157V402h147V843z M230.5,318.7c-49,0-88.2-39.2-88.2-88.2s39.2-88.2,88.2-88.2s88.2,39.2,88.2,88.2S279.5,318.7,230.5,318.7z M843,843H696V583.3c0-39.2-34.3-73.5-73.5-73.5S549,544.1,549,583.3V843H402V402h147v58.8c24.5-39.2,78.4-68.6,122.5-68.6c93.1,0,171.5,78.4,171.5,171.5V843z"
+                        fill="white" />
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </g>
+              </svg>
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/LeiSingha">
+              <svg class="w-8 h-8 lg:w-12 lg:h-12" width="42" height="42" viewBox="0 0 42 42" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21 0C9.40313 0 0 9.40313 0 21C0 32.5969 9.40313 42 21 42C32.5969 42 42 32.5969 42 21C42 9.40313 32.5969 0 21 0ZM31.0922 15.8297C31.1062 16.05 31.1062 16.2797 31.1062 16.5047C31.1062 23.3859 25.8656 31.3125 16.2891 31.3125C13.3359 31.3125 10.5984 30.4547 8.29219 28.9781C8.71406 29.025 9.11719 29.0437 9.54844 29.0437C11.9859 29.0437 14.2266 28.2188 16.0125 26.8219C13.725 26.775 11.8031 25.275 11.1469 23.2125C11.9484 23.3297 12.6703 23.3297 13.4953 23.1188C12.3175 22.8795 11.2588 22.2398 10.4991 21.3084C9.73949 20.377 9.32572 19.2113 9.32812 18.0094V17.9437C10.0172 18.3328 10.8281 18.5719 11.6766 18.6047C10.9633 18.1293 10.3784 17.4854 9.97365 16.7298C9.5689 15.9743 9.35683 15.1306 9.35625 14.2734C9.35625 13.3031 9.60938 12.4172 10.0641 11.6484C11.3714 13.2578 13.0028 14.5741 14.8522 15.5117C16.7016 16.4493 18.7275 16.9873 20.7984 17.0906C20.0625 13.5516 22.7063 10.6875 25.8844 10.6875C27.3844 10.6875 28.7344 11.3156 29.6859 12.3281C30.8625 12.1078 31.9875 11.6672 32.9906 11.0766C32.6016 12.2812 31.7859 13.2984 30.7031 13.9406C31.7531 13.8281 32.7656 13.5375 33.7031 13.1297C32.9953 14.1703 32.1094 15.0938 31.0922 15.8297Z"
+                  fill="white" />
+              </svg>
+            </a>
+
+            <a href="https://www.instagram.com/leisingha/">
+              <svg class="w-8 h-8 lg:w-12 lg:h-12" width="256px" height="256px" viewBox="0 0 256 256" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                preserveAspectRatio="xMidYMid">
+                <g>
+                  <path
+                    d="M127.999746,23.06353 C162.177385,23.06353 166.225393,23.1936027 179.722476,23.8094161 C192.20235,24.3789926 198.979853,26.4642218 203.490736,28.2166477 C209.464938,30.5386501 213.729395,33.3128586 218.208268,37.7917319 C222.687141,42.2706052 225.46135,46.5350617 227.782844,52.5092638 C229.535778,57.0201472 231.621007,63.7976504 232.190584,76.277016 C232.806397,89.7746075 232.93647,93.8226147 232.93647,128.000254 C232.93647,162.177893 232.806397,166.225901 232.190584,179.722984 C231.621007,192.202858 229.535778,198.980361 227.782844,203.491244 C225.46135,209.465446 222.687141,213.729903 218.208268,218.208776 C213.729395,222.687649 209.464938,225.461858 203.490736,227.783352 C198.979853,229.536286 192.20235,231.621516 179.722476,232.191092 C166.227425,232.806905 162.179418,232.936978 127.999746,232.936978 C93.8200742,232.936978 89.772067,232.806905 76.277016,232.191092 C63.7971424,231.621516 57.0196391,229.536286 52.5092638,227.783352 C46.5345536,225.461858 42.2700971,222.687649 37.7912238,218.208776 C33.3123505,213.729903 30.538142,209.465446 28.2166477,203.491244 C26.4637138,198.980361 24.3784845,192.202858 23.808908,179.723492 C23.1930946,166.225901 23.0630219,162.177893 23.0630219,128.000254 C23.0630219,93.8226147 23.1930946,89.7746075 23.808908,76.2775241 C24.3784845,63.7976504 26.4637138,57.0201472 28.2166477,52.5092638 C30.538142,46.5350617 33.3123505,42.2706052 37.7912238,37.7917319 C42.2700971,33.3128586 46.5345536,30.5386501 52.5092638,28.2166477 C57.0196391,26.4642218 63.7971424,24.3789926 76.2765079,23.8094161 C89.7740994,23.1936027 93.8221066,23.06353 127.999746,23.06353 M127.999746,0 C93.2367791,0 88.8783247,0.147348072 75.2257637,0.770274749 C61.601148,1.39218523 52.2968794,3.55566141 44.1546281,6.72008828 C35.7374966,9.99121548 28.5992446,14.3679613 21.4833489,21.483857 C14.3674532,28.5997527 9.99070739,35.7380046 6.71958019,44.1551362 C3.55515331,52.2973875 1.39167714,61.6016561 0.769766653,75.2262718 C0.146839975,88.8783247 0,93.2372872 0,128.000254 C0,162.763221 0.146839975,167.122183 0.769766653,180.774236 C1.39167714,194.398852 3.55515331,203.703121 6.71958019,211.845372 C9.99070739,220.261995 14.3674532,227.400755 21.4833489,234.516651 C28.5992446,241.632547 35.7374966,246.009293 44.1546281,249.28042 C52.2968794,252.444847 61.601148,254.608323 75.2257637,255.230233 C88.8783247,255.85316 93.2367791,256 127.999746,256 C162.762713,256 167.121675,255.85316 180.773728,255.230233 C194.398344,254.608323 203.702613,252.444847 211.844864,249.28042 C220.261995,246.009293 227.400247,241.632547 234.516143,234.516651 C241.632039,227.400755 246.008785,220.262503 249.279912,211.845372 C252.444339,203.703121 254.607815,194.398852 255.229725,180.774236 C255.852652,167.122183 256,162.763221 256,128.000254 C256,93.2372872 255.852652,88.8783247 255.229725,75.2262718 C254.607815,61.6016561 252.444339,52.2973875 249.279912,44.1551362 C246.008785,35.7380046 241.632039,28.5997527 234.516143,21.483857 C227.400247,14.3679613 220.261995,9.99121548 211.844864,6.72008828 C203.702613,3.55566141 194.398344,1.39218523 180.773728,0.770274749 C167.121675,0.147348072 162.762713,0 127.999746,0 Z M127.999746,62.2703115 C91.698262,62.2703115 62.2698034,91.69877 62.2698034,128.000254 C62.2698034,164.301738 91.698262,193.730197 127.999746,193.730197 C164.30123,193.730197 193.729689,164.301738 193.729689,128.000254 C193.729689,91.69877 164.30123,62.2703115 127.999746,62.2703115 Z M127.999746,170.667175 C104.435741,170.667175 85.3328252,151.564259 85.3328252,128.000254 C85.3328252,104.436249 104.435741,85.3333333 127.999746,85.3333333 C151.563751,85.3333333 170.666667,104.436249 170.666667,128.000254 C170.666667,151.564259 151.563751,170.667175 127.999746,170.667175 Z M211.686338,59.6734287 C211.686338,68.1566129 204.809755,75.0337031 196.326571,75.0337031 C187.843387,75.0337031 180.966297,68.1566129 180.966297,59.6734287 C180.966297,51.1902445 187.843387,44.3136624 196.326571,44.3136624 C204.809755,44.3136624 211.686338,51.1902445 211.686338,59.6734287 Z"
+                    fill="white"></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </div>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

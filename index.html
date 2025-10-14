@@ -77,33 +77,30 @@
     </div>
   </header>
 
+  <!-- Side Navigation -->
+  <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
+    <div class="absolute left-50 space-y-6" style="top: 40vh; transform: translate(-50%, -50%);">
+      <a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Home</span>
+      </a>
+      <a href="#projects" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Projects</span>
+      </a>
+      <a href="#about" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">About</span>
+      </a>
+      <a href="#contact" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Contact</span>
+      </a>
+    </div>
+  </nav>
 
-
-
-  <div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-    <div class="flex flex-wrap md:flex-nowrap">
-
-      <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
-        <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
-          <a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
-            <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Home</span>
-          </a>
-          <a href="#projects" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-            <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Projects</span>
-          </a>
-          <a href="#about" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-            <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">About</span>
-          </a>
-          <a href="#contact" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-            <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Contact</span>
-          </a>
-        </div>
-      </nav>
-
-      <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
-        <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left">Building<br> beautiful web
+  <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <div class="flex flex-wrap md:flex-nowrap items-center gap-8 md:gap-2 lg:gap-16 w-full lg:ml-20">
+      <div class="flex flex-wrap justify-center md:justify-start w-full md:w-auto max-w-xl lg:max-w-xl mt-0 md:my-36">
+        <h1 class="font-bold text-5xl md:text-5xl lg:text-7xl text-center md:text-left">Building<br> beautiful web
           experiences.</h1>
-        <div class="w-full flex justify-center md:justify-start">
+        <div class="w-full md:w-auto flex justify-center md:justify-start">
           <a href="#projects"><button class="px-8 py-4 bg-theme text-white font-bold mt-12 flex items-center space-x-3">
               <div>
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,7 +116,19 @@
             </button></a>
         </div>
       </div>
-      <img src="assets/man.svg" alt="Man" class="w-3/4 mt-12 md:absolute -mt-6 md:mt-0 right-0 -z-1">
+
+      <!-- Pac-Man Loader Animation -->
+      <div class="hidden md:block md:mr-8 lg:mr-0">
+        <div class="loader-wrapper">
+          <div class="packman"></div>
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -127,7 +136,7 @@
 
   <!-- My projects -->
 
-  <div class="container  mt-32 pt-32 -mb-60 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+  <div class="container pt-32 -mb-60 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
     <section class="w-full">
       <h2 id="projects" class="secondary-title">My Projects</h2>
       <p class="section-paragraph">Here are some projects that I've worked on throughout university 💫.</p>

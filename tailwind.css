@@ -3783,3 +3783,16 @@ button svg {
   display: block;
   vertical-align: bottom;
 }
+
+/* Custom breakpoint for project cards - stack below 1024px */
+@media (max-width: 1023px) {
+  .my-20.relative.rounded-lg {
+    display: block !important;
+  }
+  .my-20.relative.rounded-lg .card {
+    width: 100% !important;
+  }
+  .my-20.relative.rounded-lg .card + div {
+    width: 100% !important;
+  }
+}

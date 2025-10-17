@@ -176,8 +176,8 @@ scroll-margin-top: 100px;
 .loader-wrapper .packman::before {
   content: '';
   position: absolute;
-  width: 75px;
-  height: 38px;
+  width: 112px;
+  height: 57px;
   background-color: #EFF107;
   border-radius: 100px 100px 0 0;
   transform: translate(-50%, -50%);
@@ -188,8 +188,8 @@ scroll-margin-top: 100px;
 .loader-wrapper .packman::after {
   content: '';
   position: absolute;
-  width: 75px;
-  height: 38px;
+  width: 112px;
+  height: 57px;
   background-color: #EFF107;
   border-radius: 0 0 100px 100px;
   transform: translate(-50%, 50%);
@@ -228,30 +228,30 @@ scroll-margin-top: 100px;
 .dots .dot {
   position: absolute;
   z-index: -1;
-  top: 12px;
-  width: 15px;
-  height: 15px;
+  top: 18px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background: #fff;
 }
 
 .dots .dot:nth-child(1) {
-  left: 135px;
+  left: 202px;
   animation: dot-stage1 0.5s infinite;
 }
 
 .dots .dot:nth-child(2) {
-  left: 90px;
+  left: 135px;
   animation: dot-stage1 0.5s infinite;
 }
 
 .dots .dot:nth-child(3) {
-  left: 45px;
+  left: 67px;
   animation: dot-stage1 0.5s infinite;
 }
 
 .dots .dot:nth-child(4) {
-  left: 15px;
+  left: 22px;
   animation: dot-stage2 0.5s infinite;
 }
 
@@ -261,7 +261,7 @@ scroll-margin-top: 100px;
   }
 
   100% {
-    transform: translate(-36px, 0);
+    transform: translate(-54px, 0);
   }
 }
 
@@ -272,5 +272,49 @@ scroll-margin-top: 100px;
 
   5%, 100% {
     transform: scale(0);
+  }
+}
+
+/* Tablet-specific Pac-Man sizing */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .loader-wrapper .packman::before {
+    width: 84px;
+    height: 42.75px;
+  }
+
+  .loader-wrapper .packman::after {
+    width: 84px;
+    height: 42.75px;
+  }
+
+  .dots .dot {
+    width: 16.5px;
+    height: 16.5px;
+    top: 13.5px;
+  }
+
+  .dots .dot:nth-child(1) {
+    left: 151.5px;
+  }
+
+  .dots .dot:nth-child(2) {
+    left: 101.25px;
+  }
+
+  .dots .dot:nth-child(3) {
+    left: 50.25px;
+  }
+
+  .dots .dot:nth-child(4) {
+    left: 16.5px;
+  }
+
+  @keyframes dot-stage1 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-40.5px, 0);
+    }
   }
 }

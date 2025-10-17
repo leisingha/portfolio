@@ -62,3 +62,41 @@ scroll-margin-top: 100px;
 .nav-dot:hover span {
     opacity: 1;
 }
+
+/* From Uiverse.io by hexday */
+.terminal-card {
+  background-color: #111117;
+  backdrop-filter: blur(8px);
+  border-radius: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+}
+
+.terminal-header {
+  background-color: #111117;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.terminal-title {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terminal-icon {
+  color: #3F3FFF;
+}
+
+.terminal-body {
+  background-color: #111117;
+  color: #ffffff;
+  padding: 15px;
+  font-family: "Courier New", Courier, monospace;
+  min-height: 60px;
+}
